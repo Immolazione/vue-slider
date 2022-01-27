@@ -22,10 +22,10 @@ const app = new Vue (
     {
         el: '#root',
         data: {
-            images: ['image1.jpg', 
-            'image2.jpg', 
-            'image3.jpg', 
-            'image4.jpg'],
+            images: ['images/image1.jpg', 
+            'images/image2.jpg', 
+            'images/image3.jpg', 
+            'images/image4.jpg'],
 
         },
         methods: {
