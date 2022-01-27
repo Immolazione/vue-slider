@@ -28,5 +28,8 @@ const app = new Vue (
             'image4.jpg'],
 
         },
+        methods: {
+
+        },
     },
 );
