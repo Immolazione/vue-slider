@@ -22,6 +22,7 @@ const app = new Vue (
     {
         el: '#root',
         data: {
+            currentImg: 0,
             images: ['images/image1.jpg', 
             'images/image2.jpg', 
             'images/image3.jpg', 
@@ -29,7 +30,9 @@ const app = new Vue (
 
         },
         methods: {
-
+            setPic(index) {
+                
+            }
         },
     },
 );
