@@ -35,8 +35,8 @@ const app = new Vue ({
             return index === this.currentImg;
         },
 
-        setPic(){
-            
+        setPic(index){
+            this.currentImg = index;
         },
 
         prevPic(){
