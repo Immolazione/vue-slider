@@ -30,7 +30,7 @@
             <img class="img-fluid" :src="images[currentImg]"/>
             <!-- DOTS -->
             <div class="slider-dots">
-              <div class="dot mx-2" v-for="(image, index) in images"></div>
+              <div class="dot mx-2" :class='{active: isActive(index)}' v-for="(image, index) in images"></div>
             </div>
           </div>
         </div>

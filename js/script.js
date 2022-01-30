@@ -31,6 +31,14 @@ const app = new Vue ({
     },
     methods: {
 
+        isActive(index){
+            return index === this.currentImg;
+        },
+
+        setPic(){
+            
+        },
+
         prevPic(){
             if (this.currentImg === 0) {
                 this.currentImg = this.images.length - 1;
