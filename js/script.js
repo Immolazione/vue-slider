@@ -18,24 +18,3 @@ passare alla prima immagine
 Siate coerenti: o scompaiono o continuano a navigare, no a soluzioni miste!!
 */
 
-const app = new Vue (
-    {
-        el: '#root',
-        data: {
-            currentImg: 0,
-            images: ['images/image1.jpg', 
-            'images/image2.jpg', 
-            'images/image3.jpg', 
-            'images/image4.jpg'],
-
-        },
-        methods: {
-            setPic(index) {
-                return (this.currentImg = index);
-            },
-            nextPic(index) {
-                return ((this.currentImg + 1) = index);
-            },
-        },
-    },
-);
