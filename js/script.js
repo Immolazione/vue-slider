@@ -21,8 +21,8 @@ Siate coerenti: o scompaiono o continuano a navigare, no a soluzioni miste!!
 const app = new Vue ({
     el: '#root',
     data: {
-        currentImg = 0,
-        images = [
+        currentImg: 0,
+        images: [
             'images/image1.jpg',
             'images/image2.jpg',
             'images/image3.jpg',
@@ -31,5 +31,20 @@ const app = new Vue ({
     },
     methods: {
 
+        prevPic(){
+            if (this.currentImg === 0) {
+                this.currentImg = this.images.length - 1;
+            } else {
+                this.currentImg--;
+            }
+        },
+
+        nextPic(){
+            if (this.currentImg === this.images.length - 1) {
+                this.currentImg = 0;
+            } else {
+                this.currentImg++;
+            }
+        },
     },
 });
